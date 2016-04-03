@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SP to EM and DP to PX Converter</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/defaults.css" />
+    <link rel="stylesheet" href="css/c-text.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple SP/DP to EM/PX converter." />
+  </head>
+  <body class="c-main">
+    <header class="c-header">
+      <h1 class="c-header-title">Converting Between SP/EM and DP/PX</h1>
+    </header>
+    <form class="c-card">
+      <h2 class="c-card-title">
+        Convert Android's SP to EM
+      </h2>
+
+      <div class="c-card-content">
+        <input class="c-text-input sp-input" type="number" value="16.026" /> sp =
+        <input class="c-text-input em-input" type="number" value="1" /> em
+      </div>
+
+      <div class="c-card-content sp-out">
+        The formula for converting sp to em seems to be:<br />
+        <strong>sp * 0.0624 = em</strong>
+      </div>
+    </form>
+
+    <form class="c-card">
+      <h2 class="c-card-title">
+        Convert Android's DP to PX
+      </h2>
+
+      <div class="c-card-content">
+        Pretty simple: <br />
+        <strong>1dp = 1px</strong>
+      </div>
+
+      <h2 class="c-card-title">
+        When Should I Use px/dp vs em/sp?
+      </h2>
+
+      <div class="c-card-content">
+        <p>
+          Use px/dp for defining precise visual elements such as padding, border,
+          margin, and sometimes image sizes.
+        </p>
+        <p>
+          Use em/sp for defining font and icon sizes so that your app respects
+          the users' font-size preferences.
+        </p>
+      </div>
+
+    </form>
+
+    <script src="js/calc.js"></script>
+  </body>
+</html>

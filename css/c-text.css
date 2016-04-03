@@ -1,0 +1,92 @@
+.c-main {
+  background: #E1E1E1;
+}
+
+.c-header {
+  background: #4285F4;
+  color: white;
+  box-shadow: 0 5px 5px -2px #A7A7A7;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+
+  .c-header-title {
+    font-size: 1.123em;
+    margin: 0;
+  }
+
+.c-card {
+  background: #FFF;
+  box-shadow: 0 5px 5px -2px #A7A7A7;
+  border-radius: 2px;
+  margin: 0 8px 8px;
+  max-width: 500px;
+}
+
+@media (min-width: 500px) {
+  .c-card {
+    margin: 0 auto 8px;
+  }
+}
+
+  .c-card-title {
+    margin: 0;
+    padding: 24px 16px 16px;
+    font-size: 1.5em; /* 24sp */
+  }
+
+  .c-card-content {
+    padding: 16px;
+  }
+
+  .c-card-actions {
+    padding: 8px;
+  }
+
+.c-text-input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  font-size: 1em;
+  resize: none;
+  padding: 8px 0;
+  outline: none;
+  border-bottom: 1px solid #CCC;
+  transition: box-shadow 0.3s, border-color 0.2s;
+  margin-bottom: 8px;
+}
+
+  .c-text-input:focus {
+    border-color: #2196F3;
+    box-shadow: inset 0 -1px 0 0 #2196F3;
+  }
+
+.c-submit {
+  font-size: 1em;
+  border: 0;
+  background: transparent;
+  color: #2196F3;
+  padding: 0.5em 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color 0.25s;
+}
+
+  .c-submit:active {
+    background: #A9D7FB;
+  }
+
+  .c-submit:hover,
+  .c-submit:focus {
+    background: #DEF0FD;
+  }
+
+  .c-submit:disabled {
+    opacity: 0.26;
+  }
+
+.sp-input,
+.em-input {
+  width: 4em;
+}
